@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
                     searchListView.setVisibility(View.VISIBLE);
                     searchListView.setAdapter(new SearchListAdapter(getApplicationContext(), strings));
-                    strings = new ArrayList<String>(Arrays.asList(names));
+                    strings = new ArrayList(Arrays.asList(names));
                 } else
                     searchListView.setVisibility(View.GONE);
                 return false;
